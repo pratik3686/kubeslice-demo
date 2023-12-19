@@ -1,0 +1,16 @@
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: my-issuer
+  namespace: kubeslice-controller
+spec:
+  acme:
+    server: https://acme-v02.api.letsencrypt.org/directory
+    email: pratik3686@gmail.com
+    privateKeySecretRef:
+      name: my-certificate-key
+    solvers:
+    - selector: {}
+      http01:
+        ingress:
+          class: nginx

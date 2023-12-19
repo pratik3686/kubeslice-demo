@@ -1,0 +1,23 @@
+apiVersion: controller.kubeslice.io/v1alpha1
+kind: Cluster
+metadata:
+  name: worker1-cluster
+  namespace: kubeslice-avesha
+spec:
+  networkInterface: eth0
+  clusterProperty:
+    geoLocation:
+      cloudProvider: "AWS"
+      cloudRegion: "ap-south-1"
+---
+apiVersion: controller.kubeslice.io/v1alpha1
+kind: Cluster
+metadata:
+  name: worker2-cluster
+  namespace: kubeslice-avesha
+spec:
+  networkInterface: eth0
+  clusterProperty:   
+    geoLocation:
+      cloudProvider: "AWS"
+      cloudRegion: "eu-central-1"

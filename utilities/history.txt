@@ -1,0 +1,500 @@
+  195  w1
+  196  kubectl get workerslicegateway -n kubeslice-demo
+  197  ctrl
+  198  kubectl get workerslicegateway -n kubeslice-demo
+  199  kubectl get slicegw -n kubeslice-system
+  200  kubectl get slice -n kubeslice-system
+  201  kg po -A
+  202  kcg
+  203  k --context=kind-ks-ctrl --kubeconfig=kubeslice/kubeconfig.yaml apply -f kubeslice/slicegateway.yaml -n kubeslice-demo
+  204  w1
+  205  kubectl get slice -n kubeslice-system
+  206  kubectl get slicegw -n kubeslice-system
+  207  k get pods 
+  208  k get pods -A
+  209  istioctl install --set profile=demo -y
+  210  kg po -A
+  211  kubectl get slicegw -n kubeslice-system
+  212  kcg
+  213  ctrl
+  214  kcg
+  215  kubectl get slicegw -n kubeslice-system
+  216  kubectl get workerslicegateway -n kubeslice-demo
+  217  kubectl get serviceimport -n kubeslice-demo
+  218  kubectl --context=kind-ks-w-1 --kubeconfig=~/.kube/kubeslice/kubeconfig.yaml get serviceimport -n kubeslice-demo
+  219  kubectl --context=kind-ks-w-1 --kubeconfig=kubeslice/kubeconfig.yaml get serviceimport -n kubeslice-demo
+  220  ctrl
+  221  kg ns
+  222  kubectl create ns iperf
+  223  w1
+  224  kubectl create ns iperf
+  225  kg po -n ipref
+  226  cd kubeslice
+  227  mkdir demo
+  228  cd demo/
+  229  k apply -f demo-ipref.yaml 
+  230  kubectl get serviceexport -n iperf
+  231  w1
+  232  istioctl install --set profile=demo -y
+  233  kubectl create ns bookinfo
+  234  ctrl
+  235  k apply -f ../slicegateway.yaml 
+  236  w1
+  237  k apply -f ../slicegateway.yaml 
+  238  ctrl
+  239  k apply -f ../slicegateway.yaml -n kubeslice-demo
+  240  k delete -f ../slicegateway.yaml -n kubeslice-demo
+  241  k apply -f ../slicegateway.yaml -n kubeslice-demo
+  242  kubectl get workerslicegateway -n kubeslice-demo
+  243  cd /c/Users/dell/Soft/
+  244  ssh ubuntu@65.2.188.108 -i ~/.ssh/gaction1.pem 
+  245  ssh ubuntu@65.2.188.108 -i ~/.ssh/gaction1.pem 
+  246  ssh ubuntu@65.2.188.108 -i ~/.ssh/gaction1.pem 
+  247  k3d -h
+  248  k3d cluster add -h
+  249  k3d cluster create w1
+  250  kcg
+  251  kuc kind-ctrl
+  252  cd ~/.kube/
+  253  cd kubsc/
+  254  ls
+  255  k cluster-info
+  256  k cluster-info
+  257  helm install kubeslice-controller kubeslice/kubeslice-controller -f controller.yaml --namespace kubeslice-controller --create-namespace
+  258  kubeslice-cli install --profile=full-demo
+  259  kcg
+  260  cd ../
+  261  ls
+  262  kubectx.exe 
+  263  kubectx.exe 
+  264  kubectx 
+  265  kubectx kind-ks-ctrl
+  266  kubeslice-cli install --profile=full-demo
+  267  kg po -A
+  268  cd kubsc/
+  269  kg po -A
+  270  kubectx kind-ks-ctrl
+  271  kubectx kind-ks-ctrl
+  272  kubectx
+  273  cd ../
+  274  mkdir kubectx
+  275  mkdir kubectx1
+  276  mv kubectx.exe kubectx1/
+  277  cd kubectx
+  278  ls -la
+  279  kubectx
+  280  ssh ubuntu@worker.pratikargade.online -i ~/.ssh/gaction1.pem 
+  281  kind delete cluster controller
+  282  kind delete cluster --name controller
+  283  k3d cluster create w1
+  284  alias kg="kubectl get"
+  285  alias kgpou="kubectl get po -n utilities"
+  286  alias kgdp="kubectl get deploy"
+  287  alias k="kubectl"
+  288  alias kcg="k config get-contexts"
+  289  alias kuc="k config use-context"
+  290  alias ctrl="kuc kind-ks-ctrl"
+  291  alias w1="kuc kind-ks-w-1"
+  292  alias w2="kuc kind-ks-w-2"
+  293  export KUBECONFIG=~/.kube/micro.txt 
+  294  kcg
+  295   kubectl proxy
+  296  oc proxy
+  297   kubectl proxy
+  298  kcg
+  299  export KUBECONFIG=kubeslice/kubeconfig.yaml 
+  300  alias kg="kubectl get"
+  301  alias kgpou="kubectl get po -n utilities"
+  302  alias kgdp="kubectl get deploy"
+  303  alias k="kubectl"
+  304  alias kcg="k config get-contexts"
+  305  alias kuc="k config use-context"
+  306  alias ctrl="kuc kind-ks-ctrl"
+  307  ctrl
+  308  kg po -A
+  309  k describe po -n kube-system kube-controller-manager-ks-ctrl-control-plane
+  310  kg po -A
+  311  k logs -n kube-system kube-controller-manager-ks-ctrl-control-plane
+  312  kg po -A
+  313  kg po -A
+  314  kg po -A
+  315  kg po -A
+  316  k logs -n kube-system kube-controller-manager-ks-ctrl-control-plane -f
+  317  kg po -A
+  318  code .
+  319  code .
+  320  kubeslice-cli install --profile=full-demo
+  321  kubeslice-cli install --profile=full-demo
+  322  alias kg="kubectl get"
+  323  alias kgpou="kubectl get po -n utilities"
+  324  alias kgdp="kubectl get deploy"
+  325  alias k="kubectl"
+  326  alias kcg="k config get-contexts"
+  327  alias kuc="k config use-context"
+  328  alias ctrl="kuc kind-ks-ctrl"
+  329  alias w1="kuc kind-ks-w-1"
+  330  alias w2="kuc kind-ks-w-2"
+  331  kcg
+  332  kg po -A
+  333  ls
+  334  export KUBECONFIG=kubeslice/kubeconfig.yaml 
+  335  kcg
+  336  ctrl
+  337  kg po -A
+  338  k describe po calico-apiserver-58cf6dd466-bfd2c -n calico-apiserver
+  339  kg po -A
+  340  kubeslice-cli install --profile=full-demo
+  341  kg project -n kubeslice-controller
+  342  kcg
+  343  kg po -A
+  344  kg po -A
+  345  kubeslice-cli install --profile=full-demo
+  346  ssh -i /path/to/kubeslice-playground-key.pem ubuntu@3.82.218.11
+  347  ssh -i kubeslice-playground-key.pem ubuntu@3.82.218.11
+  348  ssh -i kubeslice-playground-key.pem ubuntu@3.82.218.11
+  349  ssh -i kubeslice-playground-key.pem ubuntu@3.82.218.11
+  350  ssh -i kubeslice-playground-key.pem ubuntu@3.82.218.11
+  351  ssh -i kubeslice-playground-key.pem ubuntu@3.82.218.11
+  352  ssh -i kubeslice-playground-key.pem ubuntu@3.82.218.11
+  353  scp -i kubeslice-playground-key.pem ubuntu@3.82.218.11:/home/ubuntu/kubeslice demo
+  354  scp -h
+  355  scp -r -i kubeslice-playground-key.pem ubuntu@3.82.218.11:/home/ubuntu/kubeslice demo
+  356  helm serch kubeslice
+  357  helm search kubeslice
+  358  helm search repo kubeslice
+  359  kcg
+  360  cd demo/
+  361  export KUBECONFIG=kubeslice/kubeconfig.yaml 
+  362  ls
+  363  kg po -
+  364  export KUBECONFIG=kubeslice/kubeconfig.yaml 
+  365  kcg
+  366  export KUBECONFIG=../kubeslice/kubeconfig.yaml 
+  367  kcg
+  368  kg po -A
+  369  cd ../
+  370  ls
+  371  export KUBECONFIG=kubeslice/kubeconfig.yaml 
+  372  kcg
+  373  kg po -A
+  374  kind -h
+  375  kind export -h
+  376  kind export kubeconfig -h
+  377  kind export kubeconfig --name ks-ctrl-control-plane
+  378  kind get clusters
+  379  kind export kubeconfig --name ks-ctrl
+  380  kg po -A
+  381  kind export kubeconfig --name ks-w-1
+  382  kind export kubeconfig --name ks-w-2
+  383  kcg
+  384  kg po -A
+  385  ctrl
+  386  kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.4/manifests/tigera-operator.yaml
+  387  w1
+  388  kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.4/manifests/tigera-operator.yaml
+  389  w2
+  390  kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.4/manifests/tigera-operator.yaml
+  391  kg po -A
+  392  k describe po -n kube-system coredns-565d847f94-bvkqf
+  393  ctrl
+  394  kg po -A
+  395  kg po -A
+  396  kind export kubeconfig --name ks-ctrl
+  397  kind export kubeconfig --name kind
+  398  kg po -A
+  399  kind create cluster --name ks-ctrl
+  400  kg po -A
+  401  kg po -A 
+  402  kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.4/manifests/tigera-operator.yaml
+  403  kind create cluster --name ks-w-1
+  404  kind create cluster --name ks-w-2
+  405  kg po -A
+  406  kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.4/manifests/tigera-operator.yaml
+  407  w1
+  408  kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.4/manifests/tigera-operator.yaml
+  409  ctrl
+  410  kg po -A
+  411  helm install cert-manager kubeslice/cert-manager --namespace cert-manager  --create-namespace --set installCRDs=true
+  412  kg po -A
+  413  kg nodes
+  414  k label node ks-ctrl-control-plane "kubeslice.io/node-type=gateway"
+  415  w1
+  416  k label node ks-w-1-control-plane "kubeslice.io/node-type=gateway"
+  417  w2
+  418  k label node ks-w-2-control-plane "kubeslice.io/node-type=gateway"
+  419  ctrl
+  420  k cluster-info
+  421  helm install kubeslice-controller kubeslice/kubeslice-controller -f demo/helm-values-controller.yaml --namespace kubeslice-controller --create-namespace
+  422  kg po -A
+  423  k apply -f demo/project.yaml -n kubeslice-controller
+  424  kubectl get project -n kubeslice-controller
+  425  kubectl apply -f demo/cluster-registration.yaml -n kubeslice-demo
+  426  kubectl get clusters -n kubeslice-demo
+  427  kubectl get secrets -n kubeslice-demo
+  428  kubectl get secrets -n kubeslice-demo kubeslice-rbac-worker-ks-w-1 -o yaml
+  429  echo "aHR0cHM6Ly8xMjcuMC4wLjE6NTYzMTc=" | base64 -d
+  430  kubectl get secrets -n kubeslice-demo kubeslice-rbac-worker-ks-w-2 -o yaml
+  431  echo "aHR0cHM6Ly8xMjcuMC4wLjE6NTYzMTc=" | base64 -d
+  432  kubectl get nodes -o wide | grep master | awk '{ print $6 }'
+  433  kubectl get nodes -o wide 
+  434  w1
+  435  helm install kubeslice-worker kubeslice/kubeslice-worker -f demo/helm-values-ks-w-1.yaml --namespace kubeslice-system  --create-namespace
+  436  kg po -A
+  437  kg po -kubeslice-system -w
+  438  kg po -n kubeslice-system -w
+  439  kg po -n kubeslice-system
+  440  kg po -n kubeslice-system -w
+  441  ctrl
+  442  kubectl get secrets -n kubeslice-demo
+  443  kubectl get secrets -n kubeslice-demo kubeslice-rbac-worker-ks-w-2 -o yaml
+  444  w2
+  445  helm install kubeslice-worker kubeslice/kubeslice-worker -f demo/helm-values-ks-w-2.yaml --namespace kubeslice-system  --create-namespace
+  446  kg po -A
+  447  w1
+  448  kg po -n kubeslice-system -w
+  449  k logs kubeslice-operator-7b4b969559-lrz7q -n kubeslice-system
+  450  ctrl
+  451  kg nodes -o wide
+  452  helm install kubeslice-worker kubeslice/kubeslice-worker -f demo/helm-values-ks-w-1.yaml --namespace kubeslice-system  --create-namespace
+  453  helm upgrade --install kubeslice-worker kubeslice/kubeslice-worker -f demo/helm-values-ks-w-1.yaml --namespace kubeslice-system  --create-namespace
+  454  kg po -A
+  455  ctrl
+  456  helm upgrade --install kubeslice-controller kubeslice/kubeslice-controller -f demo/helm-values-controller.yaml --namespace kubeslice-controller --create-namespace
+  457  w1
+  458  kg po -A
+  459  helm upgrade --install kubeslice-worker kubeslice/kubeslice-worker -f demo/helm-values-ks-w-1.yaml --namespace kubeslice-system  --create-namespace
+  460  kg po -A
+  461  ctrl
+  462  kg po -A
+  463  kind create cluster --name ks-ctrl
+  464  kind create cluster --name ks-w-1
+  465  kind create cluster --name ks-w-2
+  466  ctrl
+  467  k label node ks-ctrl-control-plane "kubeslice.io/node-type=gateway"
+  468  w1
+  469  k label node ks-w-1-control-plane "kubeslice.io/node-type=gateway"
+  470  w2
+  471  k label node ks-w-2-control-plane "kubeslice.io/node-type=gateway"
+  472  ctrl
+  473  helm install cert-manager kubeslice/cert-manager --namespace cert-manager  --create-namespace --set installCRDs=true
+  474  kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.4/manifests/tigera-operator.yaml
+  475  w1
+  476  kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.4/manifests/tigera-operator.yaml
+  477  w2
+  478  kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.4/manifests/tigera-operator.yaml
+  479  ctrl
+  480  kg po -A
+  481  kg nodes -o wide
+  482  w1
+  483  kg nodes -o wide
+  484  ctrl
+  485  helm upgrade --install kubeslice-controller kubeslice/kubeslice-controller -f demo/helm-values-controller.yaml --namespace kubeslice-controller --create-namespace
+  486  kg po -A
+  487  kg po -n kubeslice-controller -w
+  488  w1
+  489  ctrl
+  490  k apply -f demo/project.yaml -n kubeslice-controller
+  491  alias kg="kubectl get"
+  492  alias kgpou="kubectl get po -n utilities"
+  493  alias kgdp="kubectl get deploy"
+  494  alias k="kubectl"
+  495  alias kcg="k config get-contexts"
+  496  alias kuc="k config use-context"
+  497  ctrl
+  498  kubectx
+  499  kg po -n kubeslice-controller
+  500  code .
+  501  aws eks update-kubeconfig --name controller-cluster --region ap-south-1
+  502  aws eks update-kubeconfig --name worker1-cluster --region ap-south-1
+  503  kubectx
+  504  alias kg="kubectl get"
+  505  alias kgpou="kubectl get po -n utilities"
+  506  alias kgdp="kubectl get deploy"
+  507  alias k="kubectl"
+  508  alias kcg="k config get-contexts"
+  509  alias kuc="k config use-context"
+  510  kcg
+  511  kubectx arn:aws:eks:ap-south-1:734522607489:cluster/controller-cluster
+  512  helm install calico projectcalico/tigera-operator --version v3.27.0
+  513  helm repo list
+  514  helm repo update
+  515  kg po -A
+  516  cd neweks/
+  517  ls
+  518  cd utilities/
+  519  ls
+  520  kubeslice i -c topo.yaml 
+  521  kubeslice-cli i -c topo.yaml 
+  522  kg po -A
+  523  kubeslice-cli i -c topo.yaml 
+  524  kg svc -n kubeslice-controller
+  525  kg sa -n kubeslice-demo
+  526  sh ../script/generate.sh controller-cluster https://A3B7134C9263B2D24932B2C8505B0C32.gr7.ap-south-1.eks.amazonaws.com kubeslice-demo kubeslice-rbac-rw-admin
+  527  kubectx
+  528  kubectx worker1-cluster
+  529  kg po -A
+  530  kg po -A
+  531  kubectx arn:aws:eks:ap-south-1:734522607489:cluster/worker1-cluster
+  532  kg po -A
+  533  helm install calico projectcalico/tigera-operator --version v3.27.0
+  534  kubectx
+  535  kubectx arn:aws:eks:ap-south-1:734522607489:cluster/controller-cluster
+  536  kubeslice-cli i -c topo.yaml 
+  537  kubeslice-cli i -c topo.yaml 
+  538  kg po -n kubeslice-controller
+  539  kubectx
+  540  kubectx arn:aws:eks:ap-south-1:734522607489:cluster/worker1-cluster
+  541  kg po -A
+  542  kubectx arn:aws:eks:ap-south-1:734522607489:cluster/controller-cluster
+  543  kubeslice-cli i -c topo.yaml 
+  544  kcg
+  545  kg po -A
+  546  k create ns kubectl create ns iperf
+  547  kubectl create ns iperf
+  548  kubectx
+  549  kubectx arn:aws:eks:ap-south-1:734522607489:cluster/worker1-cluster
+  550  kubectl create ns iperf
+  551  kg po -A
+  552  kcg
+  553  k apply -f application/isleep.yaml -n iperf
+  554  kubectx arn:aws:eks:ap-south-1:734522607489:cluster/controller-cluster
+  555  k apply -f application/iserver.yaml -n iperf
+  556  kg po -n iperf
+  557  kg po -n iperf 
+  558  kg po -n iperf 
+  559  kubectx arn:aws:eks:ap-south-1:734522607489:cluster/worker1-cluster
+  560  kg po -n iperf 
+  561  kubectl get serviceimport -n iperf
+  562  kubectx arn:aws:eks:ap-south-1:734522607489:cluster/controller-cluster
+  563  kubectl get serviceexport -n iperf
+  564  kubectl describe serviceexport -n iperf iperf-server
+  565  kubectl get serviceexport -n iperf
+  566  kubectx
+  567  kubectx arn:aws:eks:ap-south-1:734522607489:cluster/worker1-cluster
+  568  kg po -n iperf
+  569  k rollout restart deploy iperf-sleep -n iperf
+  570  kubectx
+  571  kg po -n iperf
+  572  kubectx arn:aws:eks:ap-south-1:734522607489:cluster/controller-cluster
+  573  kg po -n iperf
+  574  k rollout restart deploy iperf-server -n iperf
+  575  kg po -n iperf
+  576  k describe po -n iperf iperf-server-64d66cc47d-hwkh8
+  577  kubectx
+  578  kubectx arn:aws:eks:ap-south-1:734522607489:cluster/worker1-cluster
+  579  kg po -n iperf
+  580  k describe po -n iperf iperf-sleep-5bd976ddbf-qk9kv
+  581  kubectl get serviceimport -n iperf
+  582  kg po -n iperf
+  583  kubectl exec -it iperf-sleep-5bd976ddbf-qk9kv -c iperf -n iperf -- sh
+  584  kcg
+  585  kubectx arn:aws:eks:ap-south-1:734522607489:cluster/controller-cluster
+  586  kubectl create ns istio-system
+  587  helm install istio-base kubeslice/istio-base -n istio-system
+  588  helm install istiod kubeslice/istio-discovery -n istio-system
+  589  kubectx
+  590  kubectx arn:aws:eks:ap-south-1:734522607489:cluster/worker1-cluster
+  591  kubectl create ns istio-system
+  592  helm install istio-base kubeslice/istio-base -n istio-system
+  593  helm install istiod kubeslice/istio-discovery -n istio-system
+  594  kg po -n istio-system
+  595  kcg
+  596  kubectx arn:aws:eks:ap-south-1:734522607489:cluster/controller-cluster
+  597  kg po -n istio-system
+  598  kubectl create ns bookinfo
+  599  kcg
+  600  kubectx arn:aws:eks:ap-south-1:734522607489:cluster/worker1-cluster
+  601  kubectl create ns bookinfo
+  602  kubectl label namespace bookinfo istio-injection=enabled
+  603  kubectx arn:aws:eks:ap-south-1:734522607489:cluster/controller-cluster
+  604  kubectl label namespace bookinfo istio-injection=enabled
+  605  sh ../script/generate.sh controller-cluster https://A3B7134C9263B2D24932B2C8505B0C32.gr7.ap-south-1.eks.amazonaws.com kubeslice-demo kubeslice-rbac-rw-admin ../script/config.yaml 
+  606  kcg
+  607  kg po -A
+  608  kubectx
+  609  kubectx arn:aws:eks:ap-south-1:734522607489:cluster/worker1-cluster
+  610  kg po -A
+  611  kcg
+  612  kuc arn:aws:eks:ap-south-1:734522607489:cluster/controller-cluster
+  613  k apply -f application/product.yaml -n bookinfo
+  614  kcg
+  615  kuc arn:aws:eks:ap-south-1:734522607489:cluster/worker1-cluster
+  616  k apply -f application/details.yaml -n bookinfo
+  617  k apply -f application/rating.yaml -n bookinfo
+  618  k apply -f application/reviewa.yaml -n bookinfo
+  619  kg po -n bookinfo
+  620  kg po -n bookinfo
+  621  k describe po -n bookinfo ratings-v1-7f9c5b74f4-5t85d
+  622  kcg
+  623  kuc arn:aws:eks:ap-south-1:734522607489:cluster/controller-cluster
+  624  kg po -n bookinfo
+  625  kg po -n bookinfo
+  626  kg po -n bookinfo
+  627  k describe po -n bookinfo productpage-v1-648dcfd44f-6s6g9
+  628  kg po -n bookinfo
+  629  kg po -n bookinfo
+  630  kcg
+  631  kuc arn:aws:eks:ap-south-1:734522607489:cluster/worker1-cluster
+  632  kcg
+  633  kg po -n bookinfo
+  634  kg po -n kubeslice-system
+  635  k describe po bookinfo-istio-egressgateway-7db7d5fc58-6c4hx -n kubeslice-system
+  636  kg po -n kubeslice-system
+  637  kg deploy -n kubeslice-system
+  638  kg po -n kubeslice-system
+  639  k logs bookinfo-istio-egressgateway-7db7d5fc58-6c4hx -n kubeslice-system -c cmd-nsc
+  640  kg ns
+  641  kg po -n kubeslice-system
+  642  k rollout restart deploy bookinfo-istio-egressgateway -n kubeslice-system
+  643  kg po -n kubeslice-system
+  644  kg po -n kubeslice-system -w
+  645  k logs -n kubeslice-system bookinfo-istio-egressgateway-7799f6f4b7-swxqx
+  646  kg po -n kubeslice-system
+  647  kg po -n kubeslice-system
+  648  kcg
+  649  kuc arn:aws:eks:ap-south-1:734522607489:cluster/controller-cluster
+  650  kg po -n kubeslice-system
+  651  k rollout restart deploy bookinfo-istio-inressgateway -n kubeslice-system
+  652  k rollout restart deploy bookinfo-istio-ingressgateway -n kubeslice-system
+  653  kg po -n kubeslice-system
+  654  kg po -n kubeslice-system -w
+  655  k describe po -n kubeslice-system bookinfo-istio-ingressgateway-7769468fc4-2ffrp
+  656  k logs -n kubeslice-system bookinfo-istio-ingressgateway-7769468fc4-2ffrp -c cmd-nsc
+  657  kg po -n kubeslice-system -w
+  658  kg po -n bookinfo
+  659  kg po -n kubeslice-system -w
+  660  kcg
+  661  kuc arn:aws:eks:ap-south-1:734522607489:cluster/worker1-cluster
+  662  kg po -n kubeslice-system -w
+  663  kg po -n kubeslice-system -w
+  664  kg po -n kubeslice-system -w
+  665  kg po -n bookinfo
+  666  k rollout restart deploy -n bookinfo
+  667  kg po -n bookinfo
+  668  kg po -n bookinfo -w
+  669  kcg
+  670  kuc arn:aws:eks:ap-south-1:734522607489:cluster/controller-cluster
+  671  k rollout restart deploy -n bookinfo
+  672  kg po -n bookinfo -w
+  673  kuc
+  674  kcg
+  675  kuc arn:aws:eks:ap-south-1:734522607489:cluster/worker1-cluster
+  676  kcg
+  677  k apply -f application/bookservice.yaml -n bookinfo
+  678  kubectl get serviceexport -n bookinfo
+  679  kcg
+  680  kuc arn:aws:eks:ap-south-1:734522607489:cluster/controller-cluster
+  681  kubectl get serviceimport -n bookinfo
+  682  kg svc -n bookinfo
+  683  kg svc -n bookinfo -o wide
+  684  kg po -n bookinfo
+  685  kg po -n bookinfo -o wide
+  686  sh ../script/generate.sh controller-cluster https://A3B7134C9263B2D24932B2C8505B0C32.gr7.ap-south-1.eks.amazonaws.com kubeslice-demo kubeslice-rbac-rw-admin ../script/config.yaml 
+  687  kg sa -n bookinfo
+  688  kg sa -A | grep P
+  689  kg sa -A | grep p
+  690  kcg
+  691  kg po -A
+  692  kg po -n kubeslice-system -o wide
+  693  history
+  694  history > history.txt

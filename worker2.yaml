@@ -1,0 +1,22 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: worker2-cluster
+  region: eu-central-1
+
+nodeGroups:
+  - name: ng-1
+    instanceType: t3.medium
+    labels: {kubeslice.io/node-type: gateway}
+    desiredCapacity: 3
+    volumeSize: 20
+    ssh:
+      allow: true
+  - name: ng-2
+    instanceType: t3.medium
+    labels: {kubeslice.io/node-type: gateway}
+    desiredCapacity: 3
+    volumeSize: 20
+    ssh:
+      allow: true

@@ -1,0 +1,48 @@
+apiVersion: controller.kubeslice.io/v1alpha1
+kind: SliceConfig
+metadata: 
+  name: book
+  namespace: kubeslice-avesha
+spec:
+  sliceSubnet: 10.0.0.0/16
+  maxClusters: 16         #Ex: 5. By default, the maxClusters value is set to 16
+  sliceType: Application
+  sliceGatewayProvider:
+    sliceGatewayType: OpenVPN
+    sliceCaType: Local
+  sliceIpamType: Local
+  clusters:
+    - worker1-cluster
+    - worker2-cluster
+  qosProfileDetails:
+    queueType: HTB
+    priority: 2                    #keep integer values from 0 to 3
+    tcType: BANDWIDTH_CONTROL
+    bandwidthCeilingKbps: 5120
+    bandwidthGuaranteedKbps: 2560
+    dscpClass: AF11
+  namespaceIsolationProfile:
+    applicationNamespaces:
+      - namespace: bookinfo
+        clusters:
+        - '*'
+    isolationEnabled: true                   #make this true in case you want to enable isolation
+    # allowedNamespaces:
+    #   - namespace: kube-system
+    #     clusters:
+    #     - '*'
+  externalGatewayConfig:         #enable which gateway we wanted to and on which cluster
+    - ingress:
+        enabled: false              
+      egress:
+        enabled: true
+        gatewayType: istio
+      clusters:
+        - worker1-cluster
+    - ingress:
+        enabled: true
+      egress:
+        enabled: false
+      gatewayType: istio
+      clusters:
+        - worker2-cluster

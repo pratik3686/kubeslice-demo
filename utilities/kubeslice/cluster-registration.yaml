@@ -1,0 +1,20 @@
+
+apiVersion: controller.kubeslice.io/v1alpha1
+kind: Cluster
+metadata:
+  name: controller-cluster 
+  namespace: kubeslice-demo
+spec:
+  clusterProperty: {}
+---
+
+
+apiVersion: controller.kubeslice.io/v1alpha1
+kind: Cluster
+metadata:
+  name: worker-cluster 
+  namespace: kubeslice-demo
+spec:
+  clusterProperty: {}
+---
+

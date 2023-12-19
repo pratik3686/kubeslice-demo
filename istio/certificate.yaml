@@ -1,0 +1,11 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: my-cert
+  namespace: kubeslice-controller
+spec:
+  secretName: my-ingress-cert              
+  issuerRef:
+    name: my-issuer
+  dnsNames:
+  - "kubeslice.controller.pratikargade.online"

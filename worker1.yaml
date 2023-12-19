@@ -1,0 +1,23 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: worker1-cluster
+  region: ap-south-1
+
+nodeGroups:
+  - name: ng-1
+    instanceType: t3.medium
+    desiredCapacity: 2
+    volumeSize: 20
+    labels: {kubeslice.io/node-type: gateway}
+    ssh:
+      allow: true
+ # will use ~/.ssh/id_rsa.pub as the default ssh key
+  - name: ng-2
+    instanceType: t3.medium
+    labels: {kubeslice.io/node-type: gateway}
+    desiredCapacity: 1
+    volumeSize: 20
+    ssh:
+      allow: true
